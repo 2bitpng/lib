@@ -22,18 +22,17 @@ struct RMQ{
   vector<T> data_,bucket_data_;
   const T INF = numeric_limits<T>::max();
   RMQ(int N_) :N(N_),data_(N,INF) {
-    B=sqrtll(N);  
+    B=sqrtll(N)+1;  
     bucket_data_.assign(B+1,INF);
   }
   //iにxをセットする
   //O(sqrt(N))
   void set(int i, T x){
-    assert(0<=i&&i<N);
     data_[i] = x;
     int k=i/B; 
     T now=INF;
     for(int i=k*B;i<(k+1)*B;i++){
-      now=min(now,data_.at(i));
+      now=min(now,data_[i]);
     }
     bucket_data_[k] = now;
   }
