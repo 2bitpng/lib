@@ -1,18 +1,20 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: data_structure/RMQ_square_decomposition.hpp
     title: data_structure/RMQ_square_decomposition.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
+    '*NOT_SPECIAL_COMMENTS*': ''
+    PROBLEM: https://judge.yosupo.jp/problem/staticrmq
     links:
     - https://judge.yosupo.jp/problem/staticrmq
-  bundledCode: "#line 1 \"test/library_checker/data_structure/staticrmq_square_decomposition.cpp\"\
+  bundledCode: "#line 1 \"test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp\"\
     \n#define PROBLEM \"https://judge.yosupo.jp/problem/staticrmq\"\n#include <bits/stdc++.h>\n\
     #define rep(i, n) for (int i = 0; i < (int)(n); i++)\n#define all(x) (x).begin(),(x).end()\n\
     #define fix(x) fixed << setprecision(x)\n#define eb emplace_back\nconstexpr char\
@@ -52,7 +54,7 @@ data:
     \u306E\u4E00\u90E8\u5206\u304C\u533A\u9593\u306B\u5165\u3063\u3066\u3044\u308B\
     \u5834\u5408\n        for(int i=max<int>(l,x);i<min<int>(r,y);i++){\n        \
     \  now=min(now,data_[i]);\n        }\n      }\n    }\n    return now;\n  }\n};\n\
-    #line 24 \"test/library_checker/data_structure/staticrmq_square_decomposition.cpp\"\
+    #line 24 \"test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp\"\
     \nint main(){\n  int N,Q;cin>>N>>Q;\n  RMQ<ll> rmq(N);\n  rep(i,N){\n    int a;cin>>a;\n\
     \    rmq.set(i,a);\n  }\n  while(Q--){\n    int l,r;cin>>l>>r;\n    cout<<rmq.prod(l,r)<<endl;\n\
     \  }\n}\n"
@@ -74,16 +76,16 @@ data:
     \  }\n}\n"
   dependsOn:
   - data_structure/RMQ_square_decomposition.hpp
-  isVerificationFile: false
-  path: test/library_checker/data_structure/staticrmq_square_decomposition.cpp
+  isVerificationFile: true
+  path: test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
   requiredBy: []
-  timestamp: '2023-02-18 23:02:44+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
+  timestamp: '2023-02-18 23:14:34+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: test/library_checker/data_structure/staticrmq_square_decomposition.cpp
+documentation_of: test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
 layout: document
 redirect_from:
-- /library/test/library_checker/data_structure/staticrmq_square_decomposition.cpp
-- /library/test/library_checker/data_structure/staticrmq_square_decomposition.cpp.html
-title: test/library_checker/data_structure/staticrmq_square_decomposition.cpp
+- /verify/test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
+- /verify/test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp.html
+title: test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
 ---
