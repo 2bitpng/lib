@@ -1,10 +1,7 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: test/library_checker/data_structure/staticrmq_square_decomposition.cpp
-    title: test/library_checker/data_structure/staticrmq_square_decomposition.cpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -108,8 +105,7 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: template.hpp
-  requiredBy:
-  - test/library_checker/data_structure/staticrmq_square_decomposition.cpp
+  requiredBy: []
   timestamp: '2023-02-18 22:31:53+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
