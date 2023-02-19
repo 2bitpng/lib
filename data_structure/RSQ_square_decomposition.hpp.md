@@ -1,14 +1,14 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: test/aoj/data_structure/Range_Sum_Query._square_decompositiontest.cpp
-    title: test/aoj/data_structure/Range_Sum_Query._square_decompositiontest.cpp
-  _extendedVerifiedWith: []
+  _extendedRequiredBy: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/aoj/data_structure/Range_Sum_Query._square_decomposition.test.cpp
+    title: test/aoj/data_structure/Range_Sum_Query._square_decomposition.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links:
     - https://kujira16.hateblo.jp/entry/2016/12/15/000000
@@ -55,11 +55,11 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: data_structure/RSQ_square_decomposition.hpp
-  requiredBy:
-  - test/aoj/data_structure/Range_Sum_Query._square_decompositiontest.cpp
+  requiredBy: []
   timestamp: '2023-02-19 14:26:53+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/aoj/data_structure/Range_Sum_Query._square_decomposition.test.cpp
 documentation_of: data_structure/RSQ_square_decomposition.hpp
 layout: document
 redirect_from:
