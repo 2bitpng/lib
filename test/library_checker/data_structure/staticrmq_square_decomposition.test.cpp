@@ -1,9 +1,13 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/staticrmq"
 #include "../../../template.hpp"
-#include "../../../data_structure/RMQ_square_decomposition.hpp"
+#include "../../../data_structure/monoid_square_decomposition.hpp"
+ll op(ll a,ll b){
+  return min(a,b);
+}
+const ll e = INF;
 int main(){
   int N,Q;cin>>N>>Q;
-  RMQ<ll> rmq(N);
+  monoid_range_query_square<ll> rmq(N,op,e);
   rep(i,N){
     int a;cin>>a;
     rmq.set(i,a);
