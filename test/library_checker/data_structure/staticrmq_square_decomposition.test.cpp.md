@@ -33,13 +33,11 @@ data:
     \ <typename T> inline T lcm(T a, T b) {return a /gcd(a, b)*b;}\nconst ll INF =\
     \ 1LL << 60;\nconst ld PI = acos(-1);\n#line 1 \"data_structure/RMQ_square_decomposition.hpp\"\
     \n//\u53C2\u8003\n//https://www.slideshare.net/iwiwi/ss-3578491\n//https://kujira16.hateblo.jp/entry/2016/12/15/000000\n\
-    //\u87FB\u672CP167~\nint sqrtll(ll N){\n  int ok = 0;\n  int ng = N+1; \n  while(abs(ok-ng)>1){\n\
-    \    ll mid = (ok+ng)/2;\n    if(mid<=N/mid)ok=mid;\n    else ng = mid;\n  }\n\
-    \  return ok;\n}\ntemplate<typename T>\nstruct RMQ{\n  //N :\u8981\u7D20\u6570\
+    //\u87FB\u672CP167~\ntemplate<typename T>\nstruct RMQ{\n  //N :\u8981\u7D20\u6570\
     \ \n  //B :\u30D0\u30B1\u30C3\u30C8\u306E\u30B5\u30A4\u30BA\n  //data_: \u5143\
     \u306E\u914D\u5217\n  //bucket_data_ :\u30D0\u30B1\u30C3\u30C8\u3054\u3068\u306E\
     \u30C7\u30FC\u30BF\n  int N,B;\n  vector<T> data_,bucket_data_;\n  const T INF\
-    \ = numeric_limits<T>::max();\n  RMQ(int N_) :N(N_),data_(N,INF) {\n    B=sqrtll(N)+1;\
+    \ = numeric_limits<T>::max();\n  RMQ(int N_) :N(N_),data_(N,INF) {\n    B=sqrt(N)+1;\
     \  \n    bucket_data_.assign(B+1,INF);\n  }\n  //i\u306Bx\u3092\u30BB\u30C3\u30C8\
     \u3059\u308B\n  //O(sqrt(N))\n  void set(int i, T x){\n    data_[i] = x;\n   \
     \ int k=i/B; \n    T now=INF;\n    for(int i=k*B;i<(k+1)*B;i++){\n      now=min(now,data_[i]);\n\
@@ -73,7 +71,7 @@ data:
   isVerificationFile: true
   path: test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
   requiredBy: []
-  timestamp: '2023-02-19 10:19:26+09:00'
+  timestamp: '2023-02-19 12:55:01+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
