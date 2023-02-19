@@ -1,3 +1,7 @@
+//参考
+//https://www.slideshare.net/iwiwi/ss-3578491
+//https://kujira16.hateblo.jp/entry/2016/12/15/000000
+//蟻本P167~
 template<typename T>
 struct RSQ{
   int N,B;
