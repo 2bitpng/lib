@@ -2,16 +2,6 @@
 //https://www.slideshare.net/iwiwi/ss-3578491
 //https://kujira16.hateblo.jp/entry/2016/12/15/000000
 //蟻本P167~
-int sqrtll(ll N){
-  int ok = 0;
-  int ng = N+1; 
-  while(abs(ok-ng)>1){
-    ll mid = (ok+ng)/2;
-    if(mid<=N/mid)ok=mid;
-    else ng = mid;
-  }
-  return ok;
-}
 template<typename T>
 struct RMQ{
   //N :要素数 
@@ -22,7 +12,7 @@ struct RMQ{
   vector<T> data_,bucket_data_;
   const T INF = numeric_limits<T>::max();
   RMQ(int N_) :N(N_),data_(N,INF) {
-    B=sqrtll(N)+1;  
+    B=sqrt(N)+1;  
     bucket_data_.assign(B+1,INF);
   }
   //iにxをセットする

@@ -1,20 +1,10 @@
-int sqrtll(ll N){
-  int ok = 0;
-  int ng = N+1; 
-  while(abs(ok-ng)>1){
-    ll mid = (ok+ng)/2;
-    if(mid<=N/mid)ok=mid;
-    else ng = mid;
-  }
-  return ok;
-}
 template<typename T>
 struct RSQ{
   int N,B;
   T e = 0;
   vector<T> data_,bucket_data_;
   RSQ(int N_) :N(N_),data_(N,e) {
-    B=sqrtll(N)+1;  
+    B=sqrt(N)+1;  
     bucket_data_.assign(B,e);
   }
   //iにxをセットする
