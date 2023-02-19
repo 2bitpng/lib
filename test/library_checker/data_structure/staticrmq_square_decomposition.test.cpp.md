@@ -4,6 +4,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: data_structure/RMQ_square_decomposition.hpp
     title: data_structure/RMQ_square_decomposition.hpp
+  - icon: ':heavy_check_mark:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -15,19 +18,20 @@ data:
     links:
     - https://judge.yosupo.jp/problem/staticrmq
   bundledCode: "#line 1 \"test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp\"\
-    \n#define PROBLEM \"https://judge.yosupo.jp/problem/staticrmq\"\n#include <bits/stdc++.h>\n\
-    #define rep(i, n) for (int i = 0; i < (int)(n); i++)\n#define all(x) (x).begin(),(x).end()\n\
-    #define fix(x) fixed << setprecision(x)\n#define eb emplace_back\nconstexpr char\
-    \ nl='\\n';\nusing namespace std;\nusing ll = long long;\nusing ld = long double;\n\
-    using vl = vector<long long>;\nusing vvl = vector<vector<long long>>;\nusing vs\
-    \ = vector<string>;\nusing pl = pair<long long, long long>;\ntemplate <typename\
-    \ T> inline bool chmin(T& a, const T& b) {bool compare = a > b; if (a > b) a =\
-    \ b; return compare;}\ntemplate <typename T> inline bool chmax(T& a, const T&\
-    \ b) {bool compare = a < b; if (a < b) a = b; return compare;}\ntemplate<class\
-    \ T>using rp_queue=priority_queue<T,vector<T>,greater<T>>;\nvoid fast_io(){cin.tie(nullptr);ios_base::sync_with_stdio(false);}\n\
-    template <typename T> T gcd(T a, T b) {if (b == 0)return a; else return gcd(b,\
-    \ a % b);}\ntemplate <typename T> inline T lcm(T a, T b) {return a /gcd(a, b)*b;}\n\
-    const ll INF = 1LL << 60;\nconst ld PI = acos(-1);\n#line 1 \"data_structure/RMQ_square_decomposition.hpp\"\
+    \n#define PROBLEM \"https://judge.yosupo.jp/problem/staticrmq\"\n#line 1 \"template.hpp\"\
+    \n#include <bits/stdc++.h>\n#define rep(i, n) for (int i = 0; i < (int)(n); i++)\n\
+    #define all(x) (x).begin(),(x).end()\n#define fix(x) fixed << setprecision(x)\n\
+    #define eb emplace_back\nconstexpr char nl='\\n';\nusing namespace std;\nusing\
+    \ ll = long long;\nusing ld = long double;\nusing vl = vector<long long>;\nusing\
+    \ vvl = vector<vector<long long>>;\nusing vs = vector<string>;\nusing pl = pair<long\
+    \ long, long long>;\ntemplate <typename T> inline bool chmin(T& a, const T& b)\
+    \ {bool compare = a > b; if (a > b) a = b; return compare;}\ntemplate <typename\
+    \ T> inline bool chmax(T& a, const T& b) {bool compare = a < b; if (a < b) a =\
+    \ b; return compare;}\ntemplate<class T>using rp_queue=priority_queue<T,vector<T>,greater<T>>;\n\
+    void fast_io(){cin.tie(nullptr);ios_base::sync_with_stdio(false);}\ntemplate <typename\
+    \ T> T gcd(T a, T b) {if (b == 0)return a; else return gcd(b, a % b);}\ntemplate\
+    \ <typename T> inline T lcm(T a, T b) {return a /gcd(a, b)*b;}\nconst ll INF =\
+    \ 1LL << 60;\nconst ld PI = acos(-1);\n#line 1 \"data_structure/RMQ_square_decomposition.hpp\"\
     \n//\u53C2\u8003\n//https://www.slideshare.net/iwiwi/ss-3578491\n//https://kujira16.hateblo.jp/entry/2016/12/15/000000\n\
     //\u87FB\u672CP167~\nint sqrtll(ll N){\n  int ok = 0;\n  int ng = N+1; \n  while(abs(ok-ng)>1){\n\
     \    ll mid = (ok+ng)/2;\n    if(mid<=N/mid)ok=mid;\n    else ng = mid;\n  }\n\
@@ -54,32 +58,22 @@ data:
     \u306E\u4E00\u90E8\u5206\u304C\u533A\u9593\u306B\u5165\u3063\u3066\u3044\u308B\
     \u5834\u5408\n        for(int i=max<int>(l,x);i<min<int>(r,y);i++){\n        \
     \  now=min(now,data_[i]);\n        }\n      }\n    }\n    return now;\n  }\n};\n\
-    #line 24 \"test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp\"\
+    #line 4 \"test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp\"\
     \nint main(){\n  int N,Q;cin>>N>>Q;\n  RMQ<ll> rmq(N);\n  rep(i,N){\n    int a;cin>>a;\n\
     \    rmq.set(i,a);\n  }\n  while(Q--){\n    int l,r;cin>>l>>r;\n    cout<<rmq.prod(l,r)<<endl;\n\
     \  }\n}\n"
-  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/staticrmq\"\n#include <bits/stdc++.h>\n\
-    #define rep(i, n) for (int i = 0; i < (int)(n); i++)\n#define all(x) (x).begin(),(x).end()\n\
-    #define fix(x) fixed << setprecision(x)\n#define eb emplace_back\nconstexpr char\
-    \ nl='\\n';\nusing namespace std;\nusing ll = long long;\nusing ld = long double;\n\
-    using vl = vector<long long>;\nusing vvl = vector<vector<long long>>;\nusing vs\
-    \ = vector<string>;\nusing pl = pair<long long, long long>;\ntemplate <typename\
-    \ T> inline bool chmin(T& a, const T& b) {bool compare = a > b; if (a > b) a =\
-    \ b; return compare;}\ntemplate <typename T> inline bool chmax(T& a, const T&\
-    \ b) {bool compare = a < b; if (a < b) a = b; return compare;}\ntemplate<class\
-    \ T>using rp_queue=priority_queue<T,vector<T>,greater<T>>;\nvoid fast_io(){cin.tie(nullptr);ios_base::sync_with_stdio(false);}\n\
-    template <typename T> T gcd(T a, T b) {if (b == 0)return a; else return gcd(b,\
-    \ a % b);}\ntemplate <typename T> inline T lcm(T a, T b) {return a /gcd(a, b)*b;}\n\
-    const ll INF = 1LL << 60;\nconst ld PI = acos(-1);\n#include \"../../../data_structure/RMQ_square_decomposition.hpp\"\
+  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/staticrmq\"\n#include \"\
+    ../../../template.hpp\"\n#include \"../../../data_structure/RMQ_square_decomposition.hpp\"\
     \nint main(){\n  int N,Q;cin>>N>>Q;\n  RMQ<ll> rmq(N);\n  rep(i,N){\n    int a;cin>>a;\n\
     \    rmq.set(i,a);\n  }\n  while(Q--){\n    int l,r;cin>>l>>r;\n    cout<<rmq.prod(l,r)<<endl;\n\
     \  }\n}\n"
   dependsOn:
+  - template.hpp
   - data_structure/RMQ_square_decomposition.hpp
   isVerificationFile: true
   path: test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
   requiredBy: []
-  timestamp: '2023-02-18 23:14:34+09:00'
+  timestamp: '2023-02-19 10:19:26+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp

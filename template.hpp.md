@@ -2,10 +2,16 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/aoj/data_structure/Range_Sum_Query.test.cpp
+    title: test/aoj/data_structure/Range_Sum_Query.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
+    title: test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: '#line 1 "template.hpp"
@@ -107,8 +113,10 @@ data:
   path: template.hpp
   requiredBy: []
   timestamp: '2023-02-18 22:31:53+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
+  - test/aoj/data_structure/Range_Sum_Query.test.cpp
 documentation_of: template.hpp
 layout: document
 redirect_from:
