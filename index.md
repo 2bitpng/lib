@@ -3,12 +3,6 @@ data:
   libraryCategories:
   - name: data_structure
     pages:
-    - icon: ':warning:'
-      path: data_structure/RMQ_square_decomposition.hpp
-      title: data_structure/RMQ_square_decomposition.hpp
-    - icon: ':warning:'
-      path: data_structure/RSQ_square_decomposition.hpp
-      title: data_structure/RSQ_square_decomposition.hpp
     - icon: ':heavy_check_mark:'
       path: data_structure/monoid_square_decomposition.hpp
       title: data_structure/monoid_square_decomposition.hpp
