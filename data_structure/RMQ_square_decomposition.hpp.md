@@ -2,13 +2,10 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
-    title: test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     links:
     - https://kujira16.hateblo.jp/entry/2016/12/15/000000
@@ -67,9 +64,8 @@ data:
   path: data_structure/RMQ_square_decomposition.hpp
   requiredBy: []
   timestamp: '2023-02-19 12:55:01+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: data_structure/RMQ_square_decomposition.hpp
 layout: document
 redirect_from:
