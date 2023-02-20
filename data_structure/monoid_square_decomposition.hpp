@@ -1,3 +1,9 @@
+
+//参考
+//https://www.slideshare.net/iwiwi/ss-3578491
+//https://kujira16.hateblo.jp/entry/2016/12/15/000000
+//https://algo-logic.info/segment-tree/
+//蟻本P167~
 template<typename T>
 struct monoid_range_query_square{
   using FX = function<T(T, T)>;
