@@ -9,6 +9,9 @@ struct monoid_range_query_square{
     B = sqrt(N) + 1;
     bucket_data_.assign(B,ex_);
   }
+  T get(int i){
+    return data_[i];
+  }
   void set(int i,T x){
     data_[i] = x;
     int k = i/B;
@@ -17,6 +20,9 @@ struct monoid_range_query_square{
       now = fx(now,data_[i]);
     }
     bucket_data_[k] = now;
+  }
+  void add(int i,T x){
+    set(i,get(i)+x);
   }
   T prod(int l,int r){
     T now = ex;
