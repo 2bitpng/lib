@@ -7,7 +7,7 @@ ll op(ll a,ll b){
 const ll e = INF;
 int main(){
   int N,Q;cin>>N>>Q;
-  monoid_range_query_square<ll> rmq(N,op,e);
+  monoid_range_query<ll> rmq(N,op,e);
   rep(i,N){
     int a;cin>>a;
     rmq.set(i,a);

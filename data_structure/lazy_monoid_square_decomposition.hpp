@@ -1,17 +1,16 @@
-#pragma once
 //参考
 //https://www.slideshare.net/iwiwi/ss-3578491
 //https://kujira16.hateblo.jp/entry/2016/12/15/000000
 //https://algo-logic.info/segment-tree/
 //蟻本P167~
 template<typename T>
-struct monoid_range_query{
+struct lazy_monoid_range_query_square{
   using FX = function<T(T, T)>;
   int N,B;
   FX fx;
   const T ex;
   vector<T> data_,bucket_data_;
-  monoid_range_query(int N_,FX fx_, T ex_) : N(N_),fx(fx_),ex(ex_),data_(N,ex_){
+  lazy_monoid_range_query_square(int N_,FX fx_, T ex_) : N(N_),fx(fx_),ex(ex_),data_(N,ex_){
     B = sqrt(N) + 1;
     bucket_data_.assign(B,ex_);
   }
@@ -22,8 +21,8 @@ struct monoid_range_query{
     data_[i] = x;
     int k = i/B;
     T now = ex;
-    for(int j=k*B;j<(k+1)*B;j++){
-      now = fx(now,data_[j]);
+    for(int i=k*B;i<(k+1)*B;i++){
+      now = fx(now,data_[i]);
     }
     bucket_data_[k] = now;
   }
@@ -45,4 +44,5 @@ struct monoid_range_query{
     }
     return now;
   }
+  void apply
 };
