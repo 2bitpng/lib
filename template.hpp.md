@@ -22,11 +22,7 @@ data:
 
     #define all(x) (x).begin(),(x).end()
 
-    #define fix(x) fixed << setprecision(x)
-
     #define eb emplace_back
-
-    constexpr char nl=''\n'';
 
     using namespace std;
 
@@ -36,9 +32,7 @@ data:
 
     using vl = vector<long long>;
 
-    using vvl = vector<vector<long long>>;
-
-    using vs = vector<string>;
+    using vvl = vector<vector<long long>>; using vs = vector<string>;
 
     using pl = pair<long long, long long>;
 
@@ -49,8 +43,6 @@ data:
     b; if (a < b) a = b; return compare;}
 
     template<class T>using rp_queue=priority_queue<T,vector<T>,greater<T>>;
-
-    void fast_io(){cin.tie(nullptr);ios_base::sync_with_stdio(false);}
 
     template <typename T> T gcd(T a, T b) {if (b == 0)return a; else return gcd(b,
     a % b);}
@@ -68,11 +60,7 @@ data:
 
     #define all(x) (x).begin(),(x).end()
 
-    #define fix(x) fixed << setprecision(x)
-
     #define eb emplace_back
-
-    constexpr char nl=''\n'';
 
     using namespace std;
 
@@ -82,9 +70,7 @@ data:
 
     using vl = vector<long long>;
 
-    using vvl = vector<vector<long long>>;
-
-    using vs = vector<string>;
+    using vvl = vector<vector<long long>>; using vs = vector<string>;
 
     using pl = pair<long long, long long>;
 
@@ -95,8 +81,6 @@ data:
     b; if (a < b) a = b; return compare;}
 
     template<class T>using rp_queue=priority_queue<T,vector<T>,greater<T>>;
-
-    void fast_io(){cin.tie(nullptr);ios_base::sync_with_stdio(false);}
 
     template <typename T> T gcd(T a, T b) {if (b == 0)return a; else return gcd(b,
     a % b);}
@@ -112,7 +96,7 @@ data:
   isVerificationFile: false
   path: template.hpp
   requiredBy: []
-  timestamp: '2023-02-18 22:31:53+09:00'
+  timestamp: '2023-05-05 12:34:26+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/aoj/data_structure/Range_Sum_Query._square_decomposition.test.cpp

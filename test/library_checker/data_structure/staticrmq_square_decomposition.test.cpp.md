@@ -20,18 +20,16 @@ data:
   bundledCode: "#line 1 \"test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp\"\
     \n#define PROBLEM \"https://judge.yosupo.jp/problem/staticrmq\"\n#line 1 \"template.hpp\"\
     \n#include <bits/stdc++.h>\n#define rep(i, n) for (int i = 0; i < (int)(n); i++)\n\
-    #define all(x) (x).begin(),(x).end()\n#define fix(x) fixed << setprecision(x)\n\
-    #define eb emplace_back\nconstexpr char nl='\\n';\nusing namespace std;\nusing\
-    \ ll = long long;\nusing ld = long double;\nusing vl = vector<long long>;\nusing\
-    \ vvl = vector<vector<long long>>;\nusing vs = vector<string>;\nusing pl = pair<long\
-    \ long, long long>;\ntemplate <typename T> inline bool chmin(T& a, const T& b)\
-    \ {bool compare = a > b; if (a > b) a = b; return compare;}\ntemplate <typename\
-    \ T> inline bool chmax(T& a, const T& b) {bool compare = a < b; if (a < b) a =\
-    \ b; return compare;}\ntemplate<class T>using rp_queue=priority_queue<T,vector<T>,greater<T>>;\n\
-    void fast_io(){cin.tie(nullptr);ios_base::sync_with_stdio(false);}\ntemplate <typename\
-    \ T> T gcd(T a, T b) {if (b == 0)return a; else return gcd(b, a % b);}\ntemplate\
-    \ <typename T> inline T lcm(T a, T b) {return a /gcd(a, b)*b;}\nconst ll INF =\
-    \ 1LL << 60;\nconst ld PI = acos(-1);\n#line 2 \"data_structure/monoid_square_decomposition.hpp\"\
+    #define all(x) (x).begin(),(x).end()\n#define eb emplace_back\nusing namespace\
+    \ std;\nusing ll = long long;\nusing ld = long double;\nusing vl = vector<long\
+    \ long>;\nusing vvl = vector<vector<long long>>; using vs = vector<string>;\n\
+    using pl = pair<long long, long long>;\ntemplate <typename T> inline bool chmin(T&\
+    \ a, const T& b) {bool compare = a > b; if (a > b) a = b; return compare;}\ntemplate\
+    \ <typename T> inline bool chmax(T& a, const T& b) {bool compare = a < b; if (a\
+    \ < b) a = b; return compare;}\ntemplate<class T>using rp_queue=priority_queue<T,vector<T>,greater<T>>;\n\
+    template <typename T> T gcd(T a, T b) {if (b == 0)return a; else return gcd(b,\
+    \ a % b);}\ntemplate <typename T> inline T lcm(T a, T b) {return a /gcd(a, b)*b;}\n\
+    const ll INF = 1LL << 60;\nconst ld PI = acos(-1);\n#line 2 \"data_structure/monoid_square_decomposition.hpp\"\
     \n//\u53C2\u8003\n//https://www.slideshare.net/iwiwi/ss-3578491\n//https://kujira16.hateblo.jp/entry/2016/12/15/000000\n\
     //https://algo-logic.info/segment-tree/\n//\u87FB\u672CP167~\ntemplate<typename\
     \ T>\nstruct monoid_range_query{\n  using FX = function<T(T, T)>;\n  int N,B;\n\
@@ -62,7 +60,7 @@ data:
   isVerificationFile: true
   path: test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
   requiredBy: []
-  timestamp: '2023-02-24 16:30:32+09:00'
+  timestamp: '2023-05-05 12:34:26+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
