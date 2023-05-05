@@ -9,9 +9,14 @@ data:
     - icon: ':heavy_check_mark:'
       path: data_structure/monoid_square_decomposition.hpp
       title: data_structure/monoid_square_decomposition.hpp
+  - name: math
+    pages:
+    - icon: ':x:'
+      path: math/math_log.hpp
+      title: math/math_log.hpp
   - name: .
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template.hpp
       title: template.hpp
   verificationCategories:
@@ -28,7 +33,7 @@ data:
   - name: test/library_checker/math
     pages:
     - icon: ':x:'
-      path: test/library_checker/math/enumerate_primes.test.cpp
-      title: test/library_checker/math/enumerate_primes.test.cpp
+      path: test/library_checker/math/math_log.test.cpp
+      title: test/library_checker/math/math_log.test.cpp
 layout: toppage
 ---

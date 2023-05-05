@@ -9,9 +9,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
     title: test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
-  _isVerificationFailed: false
+  - icon: ':x:'
+    path: test/library_checker/math/math_log.test.cpp
+    title: test/library_checker/math/math_log.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: '#line 1 "template.hpp"
@@ -97,10 +100,11 @@ data:
   path: template.hpp
   requiredBy: []
   timestamp: '2023-05-05 12:34:26+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/aoj/data_structure/Range_Sum_Query._square_decomposition.test.cpp
   - test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
+  - test/library_checker/math/math_log.test.cpp
 documentation_of: template.hpp
 layout: document
 redirect_from:
