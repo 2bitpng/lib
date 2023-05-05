@@ -1,8 +1,10 @@
 
-
+DetaStructure
 sparse tableを使ったRMQ
 
 セグメント木と遅延評価付きセグメント木RMQとRSQ
 区間変更や区間加算等を含め
 
 
+Math
+baby step big stepによる離散対数問題を解くやつ
