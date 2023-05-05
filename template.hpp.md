@@ -9,12 +9,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
     title: test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
-  - icon: ':x:'
-    path: test/library_checker/math/enumerate_primes.test.cpp
-    title: test/library_checker/math/enumerate_primes.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: '#line 1 "template.hpp"
@@ -116,11 +113,10 @@ data:
   path: template.hpp
   requiredBy: []
   timestamp: '2023-02-18 22:31:53+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/library_checker/math/enumerate_primes.test.cpp
-  - test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
   - test/aoj/data_structure/Range_Sum_Query._square_decomposition.test.cpp
+  - test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
 documentation_of: template.hpp
 layout: document
 redirect_from:

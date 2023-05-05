@@ -53,8 +53,8 @@ data:
   timestamp: '2023-02-24 16:30:32+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
   - test/aoj/data_structure/Range_Sum_Query._square_decomposition.test.cpp
+  - test/library_checker/data_structure/staticrmq_square_decomposition.test.cpp
 documentation_of: data_structure/monoid_square_decomposition.hpp
 layout: document
 redirect_from:

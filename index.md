@@ -9,14 +9,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: data_structure/monoid_square_decomposition.hpp
       title: data_structure/monoid_square_decomposition.hpp
-  - name: math
-    pages:
-    - icon: ':x:'
-      path: math/linear_sieve.hpp
-      title: math/linear_sieve.hpp
   - name: .
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template.hpp
       title: template.hpp
   verificationCategories:
